@@ -143,7 +143,7 @@ export default function TruckEdit() {
   };
 
   return (
-    <Grid sx={{display: "flex", justifyContent: "flex-end" }}>
+    <Grid>
     <Box>
     <Home>
       <Navbar link={`Truck`} name={`Edit`} />
@@ -152,7 +152,7 @@ export default function TruckEdit() {
           <Card>
             <CardContent>
               <Grid container>
-                <Grid width={380} height={500} alignItems="center">
+                <Grid item xs={4} alignItems="center">
                   <Box mt={2} alignItems="center">
                     <Grid>
                       <Typography variant={"h5"} mt={2} ml={3} mb={2}>
@@ -205,8 +205,9 @@ export default function TruckEdit() {
                     </form>
                   </Box>
                 </Grid>
-                <Grid container xs={3} direction="row" mt={2}>
-                  <Box height={175}>
+                <Grid item xs={8} mt={2}>
+                  <Grid container spacing={2}>
+                    <Grid item xs={6}>
                     {DUMMY_LIST_PERUSAHAAN.map((list, index) => {
                       return (
                         <>
@@ -223,15 +224,27 @@ export default function TruckEdit() {
                         </>
                       );
                     })}
-                  </Box>
-                  <Box
-                    sx={5}
-                    width={600}
-                    mt={3}
-                    ml={2}
-                    border="1px solid rgb(231 235 235)"
-                  >
-                    <TableContainer component={Paper}>
+                  </Grid>
+                <Grid item xs={6}>
+                  {DUMMY_LIST_DRIVER.map((list, index) => {
+                    return (
+                      <>
+                        <CardTruckEditDriver
+                          key={index}
+                          id={list.id}
+                          name={list.name}
+                          jenisKelamin={list.jenisKelamin}
+                          email={list.email}
+                          phone={list.phone}
+                          image={list.image}
+                          status={list.status}
+                        />
+                      </>
+                    );
+                  })}
+                </Grid>
+                <Grid item xs={12} mt={2}>
+                <TableContainer component={Paper}>
                       <Toolbar>
                         <Typography
                           variant="h6"
@@ -243,7 +256,7 @@ export default function TruckEdit() {
                         </Typography>
                       </Toolbar>
                       <Divider />
-                      <Table sx={{ minWidth: 600 }}>
+                      <Table sx={{ minWidth: 600, border: "1px solid rgb(231 235 235)" }}>
                         <TableHead>
                           <TableRow align="center">
                             <TableCell align="center">
@@ -285,26 +298,10 @@ export default function TruckEdit() {
                         </TableBody>
                       </Table>
                     </TableContainer>
-                  </Box>
+                    </Grid>
                 </Grid>
-                <Box height={175} mt={2} ml={8}>
-                  {DUMMY_LIST_DRIVER.map((list, index) => {
-                    return (
-                      <>
-                        <CardTruckEditDriver
-                          key={index}
-                          id={list.id}
-                          name={list.name}
-                          jenisKelamin={list.jenisKelamin}
-                          email={list.email}
-                          phone={list.phone}
-                          image={list.image}
-                          status={list.status}
-                        />
-                      </>
-                    );
-                  })}
-                </Box>
+                </Grid>
+              <Grid container>
                 <Typography
                   variant={"h6"}
                   mt={4}
@@ -560,6 +557,7 @@ export default function TruckEdit() {
                     </TabPanel>
                   </TabContext>
                 </Box>
+              </Grid>
               </Grid>
             </CardContent>
           </Card>

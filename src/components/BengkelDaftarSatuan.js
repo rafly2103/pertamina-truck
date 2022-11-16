@@ -10,7 +10,6 @@ export default function PerusahaanDaftarSatuan() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, nokontrak, alamat, email);
   };
 
   const blue = {

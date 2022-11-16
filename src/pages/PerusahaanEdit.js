@@ -54,110 +54,108 @@ export default function ServiceForm() {
                       PT SINAR MENTARI
                     </Typography>
                   </Grid>
-                  <Grid item md={6}>
-                  </Grid>
+                  <Grid item md={6}></Grid>
                   <Grid md={5}>
-                  <Box mt={2}>
-                    <form>
-                      <Grid
-                        container
-                        alignItems="center"
-                        display="flex"
-                        marginBottom={2}
-                      >
-                        <Grid md={4}>
-                          <label for="induk">Induk Perusahaan :</label>
-                        </Grid>
-                        <Grid ml={2}>
-                        <label for="induk">PT. Galaksi Bima Sakti</label>
-                        </Grid>
-                      </Grid>
-                      <Grid
-                        container
-                        alignItems="center"
-                        display="flex"
-                        marginBottom={2}
-                      >
-                        <Grid md={4}>
-                          <label for="kontrak">No. Kontrak :</label>
-                        </Grid>
-                        <Grid ml={2}>
-                        <label for="kontrak">23 /du/skd/ppi/xi/2019</label>
-                        </Grid>
-                      </Grid>
-                      <Grid
-                        container
-                        alignItems="center"
-                        display="flex"
-                        marginBottom={2}
-                      >
-                        <Grid md={4}>
-                          <label for="mor">M.O.R :</label>
-                        </Grid>
-                        <Grid ml={2}>
-                        <label for="mor">01. DKI Jakarta</label>
-                        </Grid>
-                      </Grid>
-                      <Grid
-                        container
-                        alignItems="center"
-                        display="flex"
-                        marginBottom={2}
-                      >
-                        <Grid md={4}>
-                          <label for="site">Site Perusahaan :</label>
-                        </Grid>
-                        <Grid ml={2}>
-                        <label for="site">Headquarter</label>
-                        </Grid>
-                      </Grid>
-                      <Grid
-                        container
-                        alignItems="center"
-                        display="flex"
-                        marginBottom={2}
-                      >
-                        <Grid md={4}>
-                          <label for="type">Tipe Perusahaan :</label>
-                        </Grid>
-                        <Grid ml={2}>
-                        <label for="type">Business to Business</label>
-                        </Grid>
-                      </Grid>
-                      <Grid
-                        container
-                        alignItems="center"
-                        display="flex"
-                        marginBottom={2}
-                      >
-                        <Grid md={4}>
-                          <label for="industri">Industri :</label>
-                        </Grid>
-                        <Grid ml={2}>
-                        <label for="industri">Logistik</label>
-                        </Grid>
-                      </Grid>
-                      <Grid container alignItems="center" display="flex">
-                        <Grid xs="2" md="2" lg="2">
-                          {/* */}
+                    <Box mt={2}>
+                      <form>
+                        <Grid
+                          container
+                          alignItems="center"
+                          display="flex"
+                          marginBottom={2}
+                        >
+                          <Grid md={4}>
+                            <label for="induk">Induk Perusahaan :</label>
+                          </Grid>
+                          <Grid ml={2}>
+                            <label for="induk">PT. Galaksi Bima Sakti</label>
+                          </Grid>
                         </Grid>
                         <Grid
-                          xs="10"
-                          md="10"
-                          lg="4"
-                          display={"Flex"}
-                          justifyContent={"center"}
-                          ml={1}
-                          mt={1}
+                          container
+                          alignItems="center"
+                          display="flex"
+                          marginBottom={2}
                         >
+                          <Grid md={4}>
+                            <label for="kontrak">No. Kontrak :</label>
+                          </Grid>
+                          <Grid ml={2}>
+                            <label for="kontrak">23 /du/skd/ppi/xi/2019</label>
+                          </Grid>
                         </Grid>
-                      </Grid>
-                    </form>
-                  </Box>
+                        <Grid
+                          container
+                          alignItems="center"
+                          display="flex"
+                          marginBottom={2}
+                        >
+                          <Grid md={4}>
+                            <label for="mor">M.O.R :</label>
+                          </Grid>
+                          <Grid ml={2}>
+                            <label for="mor">01. DKI Jakarta</label>
+                          </Grid>
+                        </Grid>
+                        <Grid
+                          container
+                          alignItems="center"
+                          display="flex"
+                          marginBottom={2}
+                        >
+                          <Grid md={4}>
+                            <label for="site">Site Perusahaan :</label>
+                          </Grid>
+                          <Grid ml={2}>
+                            <label for="site">Headquarter</label>
+                          </Grid>
+                        </Grid>
+                        <Grid
+                          container
+                          alignItems="center"
+                          display="flex"
+                          marginBottom={2}
+                        >
+                          <Grid md={4}>
+                            <label for="type">Tipe Perusahaan :</label>
+                          </Grid>
+                          <Grid ml={2}>
+                            <label for="type">Business to Business</label>
+                          </Grid>
+                        </Grid>
+                        <Grid
+                          container
+                          alignItems="center"
+                          display="flex"
+                          marginBottom={2}
+                        >
+                          <Grid md={4}>
+                            <label for="industri">Industri :</label>
+                          </Grid>
+                          <Grid ml={2}>
+                            <label for="industri">Logistik</label>
+                          </Grid>
+                        </Grid>
+                        <Grid container alignItems="center" display="flex">
+                          <Grid xs="2" md="2" lg="2">
+                            {/* */}
+                          </Grid>
+                          <Grid
+                            xs="10"
+                            md="10"
+                            lg="4"
+                            display={"Flex"}
+                            justifyContent={"center"}
+                            ml={1}
+                            mt={1}
+                          ></Grid>
+                        </Grid>
+                      </form>
+                    </Box>
                   </Grid>
                   <Grid md={5} mt={2}>
-                    <Box>
-                    <Grid
+                    <Box sx={{ display: { xs: 'block' } }}>
+                      <Grid
                         container
                         alignItems="center"
                         display="flex"
@@ -167,10 +165,10 @@ export default function ServiceForm() {
                           <label for="phone">Phone :</label>
                         </Grid>
                         <Grid ml={2}>
-                        <label for="phone">+628111522222</label>
+                          <label for="phone">+628111522222</label>
                         </Grid>
                       </Grid>
-                    <Grid
+                      <Grid
                         container
                         alignItems="center"
                         display="flex"
@@ -180,10 +178,10 @@ export default function ServiceForm() {
                           <label for="fax">Fax :</label>
                         </Grid>
                         <Grid ml={2}>
-                        <label for="fax">+628111522222</label>
+                          <label for="fax">+628111522222</label>
                         </Grid>
                       </Grid>
-                    <Grid
+                      <Grid
                         container
                         alignItems="center"
                         display="flex"
@@ -193,10 +191,10 @@ export default function ServiceForm() {
                           <label for="website">Website :</label>
                         </Grid>
                         <Grid ml={2}>
-                        <label for="website">www.sinarmentari.com</label>
+                          <label for="website">www.sinarmentari.com</label>
                         </Grid>
                       </Grid>
-                    <Grid
+                      <Grid
                         container
                         alignItems="center"
                         display="flex"
@@ -206,10 +204,10 @@ export default function ServiceForm() {
                           <label for="owner">Ownership :</label>
                         </Grid>
                         <Grid ml={2}>
-                        <label for="owner">Private</label>
+                          <label for="owner">Private</label>
                         </Grid>
                       </Grid>
-                    <Grid
+                      <Grid
                         container
                         alignItems="center"
                         display="flex"
@@ -219,10 +217,10 @@ export default function ServiceForm() {
                           <label for="employees">Employees :</label>
                         </Grid>
                         <Grid ml={2}>
-                        <label for="employees">250</label>
+                          <label for="employees">250</label>
                         </Grid>
                       </Grid>
-                    <Grid
+                      <Grid
                         container
                         alignItems="center"
                         display="flex"
@@ -232,7 +230,7 @@ export default function ServiceForm() {
                           <label for="sic">SIC Code :</label>
                         </Grid>
                         <Grid ml={2}>
-                        <label for="sic">0004</label>
+                          <label for="sic">0004</label>
                         </Grid>
                       </Grid>
                     </Box>
