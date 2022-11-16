@@ -16,12 +16,15 @@ import BengkelPendaftaran from "./pages/BengkelPendaftaran";
 import BengkelList from "./pages/BengkelList";
 import BarSide from "./pages/BarSide";
 import Coba from "./pages/coba";
+import Signin from "./signin";
+
 export default function BasicGrid() {
   return (
     <Box>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Signin />} />
+          <Route path="dashboard" element={<Dashboard />} />
           {/* PERUSAHAAN */}
           <Route path="perusahaan/list" element={<PerusahaanList />} />
           <Route

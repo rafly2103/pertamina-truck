@@ -21,7 +21,7 @@ export default function CardDriver({
 }) {
   return (
     <>
-      <Card sx={{ minWidth: 310, border: "1px solid rgb(217 218 219)"}}>
+      <Card sx={{ minWidth: 200, border: "1px solid rgb(217 218 219)"}}>
         <CardContent>
           <Typography
             sx={{ fontSize: 10, fontWeight: "bolder" }}

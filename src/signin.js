@@ -23,7 +23,7 @@ function Copyright(props) {
     >
       {"Copyright © "}
       <Link color="inherit" href="#">
-        Your Website
+        PERTAMINA PATRA NIAGA
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -62,7 +62,6 @@ export default function SignIn() {
           </Typography>
           <Box
             component="form"
-            onSubmit={handleSubmit}
             noValidate
             sx={{ mt: 1 }}
           >
@@ -92,7 +91,7 @@ export default function SignIn() {
               </Link>
             </Grid>
             <Button
-              type="submit"
+            href="dashboard"
               fullWidth
               variant="contained"
               sx={{ mt: 2, mb: 2 }}
